@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Regression1(failed)">
+    <classes>
+      <class name="com.sam.tests.AddItemToCartTests">
+        <methods>
+          <include name="checkoutWithLogin"/>
+          <include name="tearDown"/>
+          <include name="checkoutWithoutLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.sam.tests.AddItemToCartTests -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11284" started-at="2016-07-06T01:25:09Z" finished-at="2016-07-06T01:25:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11284" started-at="2016-07-06T01:25:09Z" finished-at="2016-07-06T01:25:21Z">
+      <class name="com.sam.tests.CreateAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="setUp" is-config="true" duration-ms="2527" started-at="2016-07-05T18:25:10Z" finished-at="2016-07-05T18:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickcreateaccount()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="clickcreateaccount" duration-ms="3576" started-at="2016-07-05T18:25:12Z" finished-at="2016-07-05T18:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickcreateaccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="87" started-at="2016-07-05T18:25:16Z" finished-at="2016-07-05T18:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="setUp" is-config="true" duration-ms="1709" started-at="2016-07-05T18:25:16Z" finished-at="2016-07-05T18:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickcreateaccount2()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="clickcreateaccount2" duration-ms="3292" started-at="2016-07-05T18:25:17Z" finished-at="2016-07-05T18:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickcreateaccount2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="76" started-at="2016-07-05T18:25:21Z" finished-at="2016-07-05T18:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sam.tests.CreateAccountTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
