@@ -1,12 +1,18 @@
 package com.sam.tests;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -16,6 +22,7 @@ import com.sam.pageproject.*;
 
 public class CreateAccountTest {
 	private WebDriver driver;
+	private Logger logger= Logger.getLogger(CreateAccountTest.class);
 	public String getURL="http://107.170.213.234/catalog/index.php";
 	//define url
 	public LoginPageFactory LoginPage;
@@ -54,7 +61,9 @@ public class CreateAccountTest {
 	}
 	
 	@AfterMethod(alwaysRun=true)
-	public void tearDown(){
+	public void tearDown(ITestResult it) throws Exception{
+		CM.postResults(it);
+		driver.manage().deleteAllCookies();
 		CM.closeBrowser();
 		//close the browser
 	}
@@ -62,7 +71,7 @@ public class CreateAccountTest {
 	
 	@Test
 	public void clickcreateaccount() throws IOException{	
-		System.out.println("Click create account link");
+		logger.info("Click create account link");
 		HomePage = new HomePageFactory(driver);
 			//pass driver to home page
 		HomePage.clickcreateaccount();	
@@ -86,8 +95,8 @@ public class CreateAccountTest {
 		}
 	
 	@Test
-	public void clickcreateaccount2() throws IOException{	
-		System.out.println("Click create account link");
+	public void clickcreateaccount2() throws Exception{	
+		logger.info("Click create account link");
 		HomePage = new HomePageFactory(driver);
 			//pass driver to home page
 		HomePage.clickcreateaccount();	
@@ -107,9 +116,15 @@ public class CreateAccountTest {
 										CM.readexcel(filepath, 0, 15, 2).toString(), 
 										CM.readexcel(filepath, 0, 16, 2).toString(),
 										CM.readexcel(filepath, 0, 10, 2).toString());
+		getscreenshot();
 		CreateAccountPage.clickcontinue();
 		}
 		
-
+    public void getscreenshot() throws Exception 
+    {
+            File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+         //The below method will save the screen shot in d drive with name "screenshot.png"
+            FileUtils.copyFile(scrFile, new File("./Excel/screenshot.png"));
+    }
 
 }

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="none">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.sam.tests.AddItemToCartTestsPageFactory">
+      <class name="com.sam.tests.CreateAccountTest">
         <methods>
+          <include name="clickcreateaccount2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="checkoutWithLogin"/>
         </methods>
-      </class> <!-- com.sam.tests.AddItemToCartTestsPageFactory -->
+      </class> <!-- com.sam.tests.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+</suite> <!-- Failed suite [Suite1] -->

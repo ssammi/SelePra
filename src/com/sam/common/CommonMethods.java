@@ -3,9 +3,13 @@ package com.sam.common;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -21,9 +25,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.ITestResult;
+
+import com.sam.common.*;
 
 public class CommonMethods {
+	public  ReadPropertyFile ReadPropertyFile;
+	private static int pass = 0;
+	private static int fail = 0;
+	private static String startTime;
+	private static String endTime;
 	private WebDriver driver;
+	private Logger logger= Logger.getLogger(CommonMethods.class);
 	//why use private here
 	//because each class will have its own driver 
 	
@@ -41,23 +54,23 @@ public class CommonMethods {
 		//Receive browser type and open browser
 		if (browserType.contentEquals("Firefox")){
 			driver = new FirefoxDriver();
-			System.out.println("Opening Firefox Browser");
+			logger.info("Opening Firefox Browser");
 		}else if (browserType.contentEquals("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
 			//what is these two line does
 			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
 			Capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
 			driver = new ChromeDriver(Capabilities);
-			System.out.println("Opening Chrome Browser");
+			logger.info("Opening Chrome Browser");
 		}else{
-			System.out.println("Please select a browser type");
+			logger.info("Please select a browser type");
 			Assert.fail("Browser not selected");
 		}
 		driver.manage().window().maximize();
-		System.out.println("Maximizing Window");
+		logger.info("Maximizing Window");
 		driver.manage().deleteAllCookies();
 		//should only detele current chrome page cookies
-		System.out.println("Deleted all current page cookies");
+		logger.info("Deleted all current page cookies");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//set timeout, if no responding in 30 second then timeout
 		return driver;
@@ -66,42 +79,99 @@ public class CommonMethods {
 	public void goToURL(String sURL){
 		//receive the URL
 		driver.get(sURL);
-		System.out.println("Opening url=" + sURL);
+		logger.info("Opening url=" + sURL);
 	}
 	
 	public void closeBrowser(){
 		//quit web browser
 		driver.quit();
-		System.out.println("Browser closed");
+		logger.info("Browser closed");
 	}
+	@SuppressWarnings("static-access")
+	 public void postResults( ITestResult it) throws SQLException{
+			logger.info("Test description: " + it.getMethod().getDescription());
+			logger.info("getMethod name:" +it.getMethod());
+			logger.info("getName name:" +it.getName()); //tcID
+			logger.info("getTestClass name:" +it.getTestClass()); //null
+			logger.info("getThrow name:" +it.getThrowable());
+			String TestCaseID = it.getName(); 
+			String HostID=System.getenv().get("COMPUTERNAME");
+			logger.info(HostID);
+			ReadPropertyFile =new ReadPropertyFile();
+			String className = it.getTestClass().toString().replace("[TestClass name=class", "");
+			className = className.replace("]", "");
+			
+			if((pass+fail) == 0){
+				SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+				Date date = new Date();
+				startTime = dateFormat.format(date);	
+				logger.info("Start time: " + startTime);
+			}
+			
+			if (it.isSuccess()){
+				pass++;
+				try {	
+					logger.info("Pass");
+
+					}catch(Exception ex){
+						System.out.print(ex.getMessage());
+					}
+						
+			}else{
+				fail++;
+				try
+				{
+					if(it.getStatus() == ITestResult.SKIP){
+						logger.info("Skipped");
+					
+					}
+					else{
+						logger.info("Fail");
+						ScreenCapture screenCapture=new ScreenCapture(driver);
+						String imgPath = screenCapture.takeScreenShoot(it.getMethod());
+					
+										
+						logger.info("screenshot captured for: " +it.getMethod()+ " Failed TestCase");
+					}
+								
+					
+					//closeBrowser();
+				}catch(Exception ex){
+					ex.printStackTrace();
+				}
+			}
+
+
+				
+		}
 	
 	public void verifyText(String expected){
 		try{
 			 driver.findElement(By.xpath("//*[contains(text(),'"+ expected.trim() +"')]"));
-			 System.out.println("On page " + driver.getTitle() + ". Expected Text \""+ expected +"\" verified");
+			 logger.info("On page " + driver.getTitle() + ". Expected Text \""+ expected +"\" verified");
 			// return true;
 		 }
 		 catch(NoSuchElementException e){
-			 System.out.println("On page " + driver.getTitle() + ". Expected Text \""+ expected +"\" not found");
+			 logger.info("On page " + driver.getTitle() + ". Expected Text \""+ expected +"\" not found");
 			 Assert.fail("On page " + driver.getTitle() + ". Expected Text \""+ expected +"\" not found");
 		 }
 	}
 	
 	public void clickByXpath(String stext){
 		driver.findElement(By.xpath(stext)).click();
-		System.out.println("Link is clicked");
+		logger.info("Link is clicked");
 	}
 	
 	public void setValue(WebElement slocator,String sValue){
 		String Element=slocator.getText();
 		try {	
-			System.out.println(Element + "trying to set the value");
+			logger.info(Element + "trying to set the value");
 			slocator.clear();
 			slocator.sendKeys(sValue);
-			System.out.println(sValue + " entered");
+			logger.info(sValue + " entered");
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			System.out.println(Element + "field not found");
+			logger.info(Element + "field not found");
 		}
 	}
 	
@@ -112,16 +182,16 @@ public class CommonMethods {
 			if ((Element.isEmpty()) || (Element==null)){
 				Element=slocator.getAttribute("value");
 			}
-			System.out.println(Element + " trying to click");
+			logger.info(Element + " trying to click");
 
 			slocator.click();
-			System.out.println(Element + " clicked ");
+			logger.info(Element + " clicked ");
 			acceptPopup();
 			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			System.out.println(slocator + " not clicked ");
+			logger.info(slocator + " not clicked ");
 		}
 	}
 	
@@ -131,10 +201,10 @@ public class CommonMethods {
 			//Thread.sleep(10000);
 			alert.accept();
 			driver.switchTo().defaultContent();
-			System.out.println("Alert Accepted");
+			logger.info("Alert Accepted");
 		} catch (Exception e) {
 			// Sometimes the text exist, but not the accept button.
-			System.out.println("Alert not found");		
+			logger.info("Alert not found");		
 		}
 	}
 	

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11777" started-at="2016-07-06T22:50:29Z" finished-at="2016-07-06T22:50:41Z">
+  <suite name="Default suite" duration-ms="11245" started-at="2016-07-07T01:59:23Z" finished-at="2016-07-07T01:59:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11777" started-at="2016-07-06T22:50:29Z" finished-at="2016-07-06T22:50:41Z">
+    <test name="Default test" duration-ms="11245" started-at="2016-07-07T01:59:23Z" finished-at="2016-07-07T01:59:35Z">
       <class name="com.sam.tests.CreateAccountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="setUp" is-config="true" duration-ms="2224" started-at="2016-07-06T15:50:29Z" finished-at="2016-07-06T15:50:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="setUp" is-config="true" duration-ms="2510" started-at="2016-07-06T18:59:23Z" finished-at="2016-07-06T18:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickcreateaccount()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="clickcreateaccount" duration-ms="3908" started-at="2016-07-06T15:50:31Z" finished-at="2016-07-06T15:50:35Z">
+        <test-method status="PASS" signature="clickcreateaccount()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="clickcreateaccount" duration-ms="3784" started-at="2016-07-06T18:59:26Z" finished-at="2016-07-06T18:59:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickcreateaccount -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="88" started-at="2016-07-06T15:50:35Z" finished-at="2016-07-06T15:50:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="tearDown" is-config="true" duration-ms="90" started-at="2016-07-06T18:59:30Z" finished-at="2016-07-06T18:59:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="setUp" is-config="true" duration-ms="2091" started-at="2016-07-06T15:50:35Z" finished-at="2016-07-06T15:50:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="setUp" is-config="true" duration-ms="1782" started-at="2016-07-06T18:59:30Z" finished-at="2016-07-06T18:59:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickcreateaccount2()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="clickcreateaccount2" duration-ms="3344" started-at="2016-07-06T15:50:38Z" finished-at="2016-07-06T15:50:41Z">
+        <test-method status="PASS" signature="clickcreateaccount2()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="clickcreateaccount2" duration-ms="2976" started-at="2016-07-06T18:59:32Z" finished-at="2016-07-06T18:59:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickcreateaccount2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@6cc4c815]" name="tearDown" is-config="true" duration-ms="96" started-at="2016-07-06T15:50:41Z" finished-at="2016-07-06T15:50:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sam.tests.CreateAccountTest@e45f292]" name="tearDown" is-config="true" duration-ms="73" started-at="2016-07-06T18:59:35Z" finished-at="2016-07-06T18:59:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
