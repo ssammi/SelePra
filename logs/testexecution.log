@@ -392,3 +392,193 @@
 [main] 14:33:11,490 INFO  [com.sam.common.CommonMethods] 
 [main] 14:33:11,490 INFO  [com.sam.common.CommonMethods] Pass
 [main] 14:33:11,580 INFO  [com.sam.common.CommonMethods] Browser closed
+[main] 17:57:30,874 INFO  [com.sam.common.CommonMethods] Opening Chrome Browser
+[main] 17:57:31,244 INFO  [com.sam.common.CommonMethods] Maximizing Window
+[main] 17:57:31,256 INFO  [com.sam.common.CommonMethods] Deleted all current page cookies
+[main] 17:57:31,901 INFO  [com.sam.common.CommonMethods] Opening url=http://107.170.213.234/catalog/index.php
+[main] 17:57:31,909 INFO  [com.sam.tests.CreateAccountTest] Click create account link
+[main] 17:57:32,031 INFO  [com.sam.common.CommonMethods] create an account trying to click
+[main] 17:57:32,355 INFO  [com.sam.common.CommonMethods] create an account clicked 
+[main] 17:57:32,366 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:57:32,433 INFO  [com.sam.pageproject.CreateAccountPageFactory] gender clicked
+[main] 17:57:33,441 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:33,552 INFO  [com.sam.common.CommonMethods] Sam entered
+[main] 17:57:33,594 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:33,694 INFO  [com.sam.common.CommonMethods] Mas entered
+[main] 17:57:33,736 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:33,924 INFO  [com.sam.common.CommonMethods] "07/05/1999" entered
+[main] 17:57:33,970 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,098 INFO  [com.sam.common.CommonMethods] sam123@sam.sam entered
+[main] 17:57:34,137 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,238 INFO  [com.sam.common.CommonMethods] Font Blvd entered
+[main] 17:57:34,276 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,384 INFO  [com.sam.common.CommonMethods] 99999.0 entered
+[main] 17:57:34,427 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,531 INFO  [com.sam.common.CommonMethods] San Francisco entered
+[main] 17:57:34,700 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,800 INFO  [com.sam.common.CommonMethods] 415-999-9999 entered
+[main] 17:57:34,837 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:34,947 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:57:34,986 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:35,084 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:57:35,121 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:35,213 INFO  [com.sam.common.CommonMethods] CA entered
+[main] 17:57:35,251 INFO  [com.sam.common.CommonMethods] Continue trying to click
+[main] 17:57:35,521 INFO  [com.sam.common.CommonMethods] Continue clicked 
+[main] 17:57:35,530 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:57:35,536 INFO  [com.sam.common.CommonMethods] Test description: null
+[main] 17:57:35,536 INFO  [com.sam.common.CommonMethods] getMethod name:CreateAccountTest.clickcreateaccount()[pri:0, instance:com.sam.tests.CreateAccountTest@614ddd49]
+[main] 17:57:35,537 INFO  [com.sam.common.CommonMethods] getName name:clickcreateaccount
+[main] 17:57:35,537 INFO  [com.sam.common.CommonMethods] getTestClass name:[TestClass name=class com.sam.tests.CreateAccountTest]
+[main] 17:57:35,537 INFO  [com.sam.common.CommonMethods] getThrow name:null
+[main] 17:57:35,537 INFO  [com.sam.common.CommonMethods] 
+[main] 17:57:35,539 INFO  [com.sam.common.CommonMethods] Start time: 07/08/2016 17:57:35
+[main] 17:57:35,539 INFO  [com.sam.common.CommonMethods] Pass
+[main] 17:57:35,542 INFO  [com.sam.common.ReadPropertyFile] Value is:Chrome
+[main] 17:57:36,144 INFO  [com.sam.common.ScreenCapture] Screen Name:=CreateAccountTest_clickcreateaccount
+[main] 17:57:36,144 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:57:36,144 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:57:36,254 INFO  [com.sam.common.ScreenCapture] <a href= /Users/yuanmingzhou/Desktop/Eclipse/SeleniumPractise/screenshots\null\null\screenshots\07-08-2016_05.57.36_CreateAccountTest_clickcreateaccount.jpg target='_blank' >07-08-2016_05.57.36_CreateAccountTest_clickcreateaccount.jpg</a>
+[main] 17:57:36,395 INFO  [com.sam.common.CommonMethods] Browser closed
+[main] 17:57:37,154 INFO  [com.sam.common.CommonMethods] Opening Chrome Browser
+[main] 17:57:37,519 INFO  [com.sam.common.CommonMethods] Maximizing Window
+[main] 17:57:37,530 INFO  [com.sam.common.CommonMethods] Deleted all current page cookies
+[main] 17:57:38,074 INFO  [com.sam.common.CommonMethods] Opening url=http://107.170.213.234/catalog/index.php
+[main] 17:57:38,076 INFO  [com.sam.tests.CreateAccountTest] Click create account link
+[main] 17:57:38,178 INFO  [com.sam.common.CommonMethods] create an account trying to click
+[main] 17:57:38,487 INFO  [com.sam.common.CommonMethods] create an account clicked 
+[main] 17:57:38,491 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:57:38,552 INFO  [com.sam.pageproject.CreateAccountPageFactory] gender clicked
+[main] 17:57:38,930 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,069 INFO  [com.sam.common.CommonMethods] Saa entered
+[main] 17:57:39,114 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,208 INFO  [com.sam.common.CommonMethods] aaS entered
+[main] 17:57:39,252 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,466 INFO  [com.sam.common.CommonMethods] "07/02/1999" entered
+[main] 17:57:39,515 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,635 INFO  [com.sam.common.CommonMethods] Saa@Saa.Saa entered
+[main] 17:57:39,672 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,778 INFO  [com.sam.common.CommonMethods] Font Blvd entered
+[main] 17:57:39,820 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:39,918 INFO  [com.sam.common.CommonMethods] 99999.0 entered
+[main] 17:57:39,956 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:40,053 INFO  [com.sam.common.CommonMethods] San Jose entered
+[main] 17:57:40,230 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:40,335 INFO  [com.sam.common.CommonMethods] 415-999-9999 entered
+[main] 17:57:40,380 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:40,480 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:57:40,523 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:40,623 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:57:40,665 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:57:40,760 INFO  [com.sam.common.CommonMethods] CA entered
+[main] 17:57:40,805 INFO  [com.sam.common.CommonMethods] Continue trying to click
+[main] 17:57:41,070 INFO  [com.sam.common.CommonMethods] Continue clicked 
+[main] 17:57:41,074 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:57:41,078 INFO  [com.sam.common.CommonMethods] Test description: null
+[main] 17:57:41,078 INFO  [com.sam.common.CommonMethods] getMethod name:CreateAccountTest.clickcreateaccount2()[pri:0, instance:com.sam.tests.CreateAccountTest@614ddd49]
+[main] 17:57:41,078 INFO  [com.sam.common.CommonMethods] getName name:clickcreateaccount2
+[main] 17:57:41,078 INFO  [com.sam.common.CommonMethods] getTestClass name:[TestClass name=class com.sam.tests.CreateAccountTest]
+[main] 17:57:41,078 INFO  [com.sam.common.CommonMethods] getThrow name:null
+[main] 17:57:41,079 INFO  [com.sam.common.CommonMethods] 
+[main] 17:57:41,079 INFO  [com.sam.common.CommonMethods] Pass
+[main] 17:57:41,079 INFO  [com.sam.common.ReadPropertyFile] Value is:Chrome
+[main] 17:57:41,548 INFO  [com.sam.common.ScreenCapture] Screen Name:=CreateAccountTest_clickcreateaccount2
+[main] 17:57:41,548 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:57:41,549 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:57:41,550 INFO  [com.sam.common.ScreenCapture] <a href= /Users/yuanmingzhou/Desktop/Eclipse/SeleniumPractise/screenshots\null\null\screenshots\07-08-2016_05.57.41_CreateAccountTest_clickcreateaccount2.jpg target='_blank' >07-08-2016_05.57.41_CreateAccountTest_clickcreateaccount2.jpg</a>
+[main] 17:57:41,690 INFO  [com.sam.common.CommonMethods] Browser closed
+[main] 17:58:44,972 INFO  [com.sam.common.CommonMethods] Opening Chrome Browser
+[main] 17:58:45,302 INFO  [com.sam.common.CommonMethods] Maximizing Window
+[main] 17:58:45,314 INFO  [com.sam.common.CommonMethods] Deleted all current page cookies
+[main] 17:58:45,869 INFO  [com.sam.common.CommonMethods] Opening url=http://107.170.213.234/catalog/index.php
+[main] 17:58:45,876 INFO  [com.sam.tests.CreateAccountTest] Click create account link
+[main] 17:58:45,998 INFO  [com.sam.common.CommonMethods] create an account trying to click
+[main] 17:58:46,062 INFO  [com.sam.common.CommonMethods] create an account clicked 
+[main] 17:58:46,328 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:58:46,392 INFO  [com.sam.pageproject.CreateAccountPageFactory] gender clicked
+[main] 17:58:47,288 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:47,402 INFO  [com.sam.common.CommonMethods] Sam entered
+[main] 17:58:47,440 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:47,535 INFO  [com.sam.common.CommonMethods] Mas entered
+[main] 17:58:47,574 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:47,779 INFO  [com.sam.common.CommonMethods] "07/05/1999" entered
+[main] 17:58:47,827 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:47,955 INFO  [com.sam.common.CommonMethods] sam123@sam.sam entered
+[main] 17:58:47,991 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,092 INFO  [com.sam.common.CommonMethods] Font Blvd entered
+[main] 17:58:48,133 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,230 INFO  [com.sam.common.CommonMethods] 99999.0 entered
+[main] 17:58:48,271 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,377 INFO  [com.sam.common.CommonMethods] San Francisco entered
+[main] 17:58:48,546 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,644 INFO  [com.sam.common.CommonMethods] 415-999-9999 entered
+[main] 17:58:48,683 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,786 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:58:48,827 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:48,922 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:58:48,958 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:49,047 INFO  [com.sam.common.CommonMethods] CA entered
+[main] 17:58:49,088 INFO  [com.sam.common.CommonMethods] Continue trying to click
+[main] 17:58:49,381 INFO  [com.sam.common.CommonMethods] Continue clicked 
+[main] 17:58:49,386 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:58:49,391 INFO  [com.sam.common.CommonMethods] Test description: null
+[main] 17:58:49,391 INFO  [com.sam.common.CommonMethods] getMethod name:CreateAccountTest.clickcreateaccount()[pri:0, instance:com.sam.tests.CreateAccountTest@614ddd49]
+[main] 17:58:49,391 INFO  [com.sam.common.CommonMethods] getName name:clickcreateaccount
+[main] 17:58:49,393 INFO  [com.sam.common.CommonMethods] getTestClass name:[TestClass name=class com.sam.tests.CreateAccountTest]
+[main] 17:58:49,393 INFO  [com.sam.common.CommonMethods] getThrow name:null
+[main] 17:58:49,393 INFO  [com.sam.common.CommonMethods] 
+[main] 17:58:49,395 INFO  [com.sam.common.CommonMethods] Start time: 07/08/2016 17:58:49
+[main] 17:58:49,395 INFO  [com.sam.common.CommonMethods] Pass
+[main] 17:58:49,396 INFO  [com.sam.common.ReadPropertyFile] Value is:Chrome
+[main] 17:58:49,946 INFO  [com.sam.common.ScreenCapture] Screen Name:=CreateAccountTest_clickcreateaccount
+[main] 17:58:49,946 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:58:49,946 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:58:50,075 INFO  [com.sam.common.ScreenCapture] <a href= /Users/yuanmingzhou/Desktop/Eclipse/SeleniumPractise/screenshots/null/null/screenshots/07-08-2016_05.58.49_CreateAccountTest_clickcreateaccount.jpg target='_blank' >07-08-2016_05.58.50_CreateAccountTest_clickcreateaccount.jpg</a>
+[main] 17:58:50,218 INFO  [com.sam.common.CommonMethods] Browser closed
+[main] 17:58:51,001 INFO  [com.sam.common.CommonMethods] Opening Chrome Browser
+[main] 17:58:51,329 INFO  [com.sam.common.CommonMethods] Maximizing Window
+[main] 17:58:51,341 INFO  [com.sam.common.CommonMethods] Deleted all current page cookies
+[main] 17:58:51,930 INFO  [com.sam.common.CommonMethods] Opening url=http://107.170.213.234/catalog/index.php
+[main] 17:58:51,933 INFO  [com.sam.tests.CreateAccountTest] Click create account link
+[main] 17:58:52,026 INFO  [com.sam.common.CommonMethods] create an account trying to click
+[main] 17:58:52,314 INFO  [com.sam.common.CommonMethods] create an account clicked 
+[main] 17:58:52,318 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:58:52,376 INFO  [com.sam.pageproject.CreateAccountPageFactory] gender clicked
+[main] 17:58:52,691 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:52,823 INFO  [com.sam.common.CommonMethods] Saa entered
+[main] 17:58:52,864 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:52,959 INFO  [com.sam.common.CommonMethods] aaS entered
+[main] 17:58:53,001 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:53,201 INFO  [com.sam.common.CommonMethods] "07/02/1999" entered
+[main] 17:58:53,245 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:53,366 INFO  [com.sam.common.CommonMethods] Saa@Saa.Saa entered
+[main] 17:58:53,407 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:53,508 INFO  [com.sam.common.CommonMethods] Font Blvd entered
+[main] 17:58:53,545 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:53,641 INFO  [com.sam.common.CommonMethods] 99999.0 entered
+[main] 17:58:53,684 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:53,808 INFO  [com.sam.common.CommonMethods] San Jose entered
+[main] 17:58:53,974 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:54,086 INFO  [com.sam.common.CommonMethods] 415-999-9999 entered
+[main] 17:58:54,129 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:54,228 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:58:54,268 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:54,363 INFO  [com.sam.common.CommonMethods] a123123 entered
+[main] 17:58:54,404 INFO  [com.sam.common.CommonMethods] trying to set the value
+[main] 17:58:54,499 INFO  [com.sam.common.CommonMethods] CA entered
+[main] 17:58:54,541 INFO  [com.sam.common.CommonMethods] Continue trying to click
+[main] 17:58:54,838 INFO  [com.sam.common.CommonMethods] Continue clicked 
+[main] 17:58:54,842 INFO  [com.sam.common.CommonMethods] Alert not found
+[main] 17:58:54,844 INFO  [com.sam.common.CommonMethods] Test description: null
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] getMethod name:CreateAccountTest.clickcreateaccount2()[pri:0, instance:com.sam.tests.CreateAccountTest@614ddd49]
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] getName name:clickcreateaccount2
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] getTestClass name:[TestClass name=class com.sam.tests.CreateAccountTest]
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] getThrow name:null
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] 
+[main] 17:58:54,845 INFO  [com.sam.common.CommonMethods] Pass
+[main] 17:58:54,845 INFO  [com.sam.common.ReadPropertyFile] Value is:Chrome
+[main] 17:58:55,353 INFO  [com.sam.common.ScreenCapture] Screen Name:=CreateAccountTest_clickcreateaccount2
+[main] 17:58:55,353 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:58:55,353 INFO  [com.sam.common.ReadPropertyFile] Value is:null
+[main] 17:58:55,355 INFO  [com.sam.common.ScreenCapture] <a href= /Users/yuanmingzhou/Desktop/Eclipse/SeleniumPractise/screenshots/null/null/screenshots/07-08-2016_05.58.55_CreateAccountTest_clickcreateaccount2.jpg target='_blank' >07-08-2016_05.58.55_CreateAccountTest_clickcreateaccount2.jpg</a>
+[main] 17:58:55,488 INFO  [com.sam.common.CommonMethods] Browser closed

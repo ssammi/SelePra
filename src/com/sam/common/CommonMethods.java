@@ -112,9 +112,10 @@ public class CommonMethods {
 				pass++;
 				try {	
 					logger.info("Pass");
-
+					ScreenCapture screenCapture=new ScreenCapture(driver);
+					String imgPath = screenCapture.takeScreenShoot(it.getMethod());
 					}catch(Exception ex){
-						System.out.print(ex.getMessage());
+						logger.info(ex.getMessage());
 					}
 						
 			}else{

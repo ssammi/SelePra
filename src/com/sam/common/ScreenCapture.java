@@ -99,15 +99,15 @@ public class ScreenCapture {
     	 }
  
     	private String getPath(String nameTest) throws IOException {
-    		String app =SCREENSHOT_FOLDER + "\\" + propFile.getConfigPropertyVal("Application"); 
-    		String cycle = app + "\\" +propFile.getConfigPropertyVal("Cycle");
+    		String app =SCREENSHOT_FOLDER + "/" + propFile.getConfigPropertyVal("Application"); 
+    		String cycle = app + "/" +propFile.getConfigPropertyVal("Cycle");
     		
     		new File(app).mkdirs();
     		new File(cycle).mkdirs();
 
     		File directory = new File(cycle);
      
-    		String newFileNamePath = directory.getCanonicalPath() + "\\screenshots\\" + getFileName(nameTest);
+    		String newFileNamePath = directory.getCanonicalPath() + "/screenshots/" + getFileName(nameTest);
 
     		return newFileNamePath;
      

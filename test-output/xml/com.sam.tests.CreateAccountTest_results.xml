@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.321">
+           time="6.428">
   <properties />
   
   
-            <testcase name="clickcreateaccount2" time="3.579" classname="com.sam.tests.CreateAccountTest" />
-                <testcase name="clickcreateaccount" time="3.742" classname="com.sam.tests.CreateAccountTest" />
+            <testcase name="clickcreateaccount2" time="2.911" classname="com.sam.tests.CreateAccountTest" />
+                <testcase name="clickcreateaccount" time="3.517" classname="com.sam.tests.CreateAccountTest" />
       
 </testsuite>

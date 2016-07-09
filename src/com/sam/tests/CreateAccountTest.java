@@ -116,7 +116,7 @@ public class CreateAccountTest {
 										CM.readexcel(filepath, 0, 15, 2).toString(), 
 										CM.readexcel(filepath, 0, 16, 2).toString(),
 										CM.readexcel(filepath, 0, 10, 2).toString());
-		getscreenshot();
+//		getscreenshot();
 		CreateAccountPage.clickcontinue();
 		}
 		
